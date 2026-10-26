@@ -26,6 +26,19 @@ Uma aplicação FastAPI super simples que permite que estudantes visualizem e se
    - Documentação da API: http://localhost:8000/docs
    - Documentação alternativa: http://localhost:8000/redoc
 
+## Testes do Backend
+
+Na raiz do repositório, instale as dependências e execute os testes:
+
+```bash
+python -m pip install -r requirements.txt
+python -m pytest
+```
+
+Os testes ficam no diretório `tests/` e usam o `TestClient` do FastAPI,
+sem precisar iniciar o servidor. Cada teste usa uma cópia isolada dos dados
+em memória para não afetar os demais testes.
+
 ## Endpoints da API
 
 | Método | Endpoint                                                          | Descrição                                                                   |
